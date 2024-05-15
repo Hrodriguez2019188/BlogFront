@@ -1,0 +1,175 @@
+.container {
+  display: flex; /* Usar Flexbox */
+  flex-wrap: wrap; 
+  background-color: #5b5b5b;
+  border: 2px solid #4e4e4e;
+  border-radius: 10px;
+  padding: 10px 20px; /* Reducir el espaciado vertical */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.201);
+  height: 40px; /* Cambiar la altura del contenedor */
+}
+
+
+
+/* Estilo para los elementos dentro del contenedor */
+.container > * {
+  flex-basis: calc(60% - 20px); /* Ancho de 60% menos el espacio entre elementos */
+  margin-right: 20px; /* Espacio entre elementos */
+   /* Centrar el contenido horizontalmente */
+}
+
+
+
+
+.title-1 {
+  background-color: #4CAF50;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.project-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description-project {
+  font-style: italic;
+}
+
+a button {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+a button:hover {
+  background-color: #0056b3;
+}
+
+.title-category-class {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(149, 149, 149, 0.1);
+  padding: 10px;
+  background-color: #4CAF50;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.title-category-class:hover {
+  background-color: #45a07d;
+}
+
+/* Estilos específicos para cada categoría */
+.taller-class {
+  background-color: #3498db;
+}
+
+.tegnologia {
+  background-color: #f39c12;
+}
+
+.Supervisada {
+  background-color: #e74c3c;
+}
+
+/* Estilos adicionales */
+.text-description {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.517);
+  margin-bottom: 20px;
+}
+
+.Get-project {
+  text-decoration: none;
+}
+
+.Get-project button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a70000;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.517);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Get-project button:hover {
+  background-color: #4e0c0c;
+}
+
+/* Estilos para el contenedor principal */
+.bg {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el contenedor interno */
+.sss {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+.Contenedor-categorias {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Estilos para la lista de categorías */
+.lista-categorias {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-categorias li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces */
+.lista-categorias li a {
+  display: block;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.lista-categorias li a:hover {
+  background-color: #028d2a;
+}

@@ -1,0 +1,180 @@
+/* Navbar Container */
+nav {
+  background-color: #333;
+  padding: 40px 20px;
+  color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Inner Container */
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar Logo */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Navbar Menu Items */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative; /* Añadido */
+  transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+  transform: translateY(-3px);
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  background-image: linear-gradient(to right, #ff6347, #ff4500); /* Cambio de gradiente de fondo a tonalidad de rojo */
+  position: relative; /* Añadido */
+}
+
+nav ul li a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a::before,
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+nav ul li a::before {
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1));
+}
+
+nav ul li a::after {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+  opacity: 1;
+}
+
+/* Navbar Toggle Button */
+nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+nav button:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar Overlay */
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+}
+
+/* Navbar Sidebar */
+.navbar-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #222;
+  padding-top: 60px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.navbar-sidebar.active {
+  transform: translateX(0);
+}
+
+.navbar-sidebar ul li {
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-sidebar ul li:hover {
+  transform: translateY(-3px);
+}
+
+.navbar-sidebar ul li:last-child {
+  margin-bottom: 100px;
+}
+
+.navbar-sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-sidebar ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Media Query for Responsive Navbar */
+@media screen and (max-width: 768px) {
+  nav ul {
+      display: none;
+  }
+
+  nav button {
+      display: block;
+  }
+
+  .navbar-overlay {
+      display: block;
+  }
+
+  .navbar-sidebar {
+      padding-top: 20px;
+  }
+}

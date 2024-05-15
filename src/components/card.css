@@ -1,0 +1,106 @@
+/* Estilos generales */
+.big-container {
+  background-color: #fefefe; /* Color de fondo similar al papel */
+  border-radius: 15px; /* Borde redondeado */
+  border: 1px solid #cbd5e0; /* Borde */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 20px; /* Espacio interno */
+  margin-bottom: 20px; /* Margen inferior */
+  position: relative; /* Para posicionar el pseudo-elemento */
+}
+
+
+/* Estilo para la línea a la izquierda */
+.big-container::before {
+    content: ''; /* Contenido del pseudo-elemento */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Desde la parte superior */
+    left: 0; /* A la izquierda */
+    width: 5px; /* Ancho de la línea */
+    height: 100%; /* Altura igual al contenedor */
+    background-color: #ce3131; /* Color azul */
+    border-top-left-radius: 15px; /* Borde redondeado en la esquina superior izquierda */
+    border-bottom-left-radius: 15px; /* Borde redondeado en la esquina inferior izquierda */
+  }
+  
+
+  
+  /* Estilos para el nombre del autor */
+  .author-1 {
+    margin-bottom: 10px;
+  }
+  
+  .author-2 {
+    margin-bottom: 4px;
+  }
+  
+  .author-3 {
+    font-weight: bold;
+    color: #6d0000;
+    cursor: default;
+    border-bottom: 2px solid #6d0000; /* Agrega una línea debajo */
+    display: inline-block; /* Asegura que el elemento sea inline-block para que la línea se ajuste al texto */
+    padding-bottom: 2px;
+  }
+  
+  /* Estilos para el título */
+  .title-home {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2d3748;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .title-home:hover {
+    color: #ea6666;
+  }
+  
+  /* Estilos para la descripción */
+  .desc {
+    color: #4a5568;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  
+  /* Estilos para la fecha */
+  .when {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .onDate {
+    font-size: 0.875rem;
+    color: #4a5568;
+  }
+  
+  /* Estilos para el botón de eliminar */
+  .delete-button {
+    background-color: #ffffff;
+    border: 1px solid #f56565;
+    border-radius: 6px; /* Agregando border-radius */
+    color: #f56565;
+    font-size: 0.875rem;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  
+  .delete-button:hover {
+    background-color: #f56565;
+    color: #ffffff;
+  }
+  
+  .delete-button:focus {
+    outline: none;
+  }
+  
+  /* Estilos para el icono de eliminar */
+  .delete-icon {
+    vertical-align: middle;
+  }
+  
